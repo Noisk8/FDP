@@ -1,32 +1,30 @@
 # FDP
 
-Es una herramienta de livecoding basada en processing que permite generar visuales mediante mensajes [osc](https://es.wikipedia.org/wiki/OpenSound_Control) que envia FoxDot. 
+Es una aplicación basada en (java) processing que permite generar visuales mediante mensajes [osc](https://es.wikipedia.org/wiki/OpenSound_Control) que envia FoxDot. 
 
+
+## Cómo funciona FDP?
+
+FDP utiliza sonidos que crean syntetizadores y reproductores de Foxdot para  enviar mensajes osc a processing, estos mensajes se  interpretan de forma visual con elementos como imagenes o esructuras geometricas.
 
 [Que es? FoxDot?](http://foxdot.org/)
 
 [Que es Processing?](https://processing.org/)
 
 
-## Cómo funciona FDP?
-
-FDP utiliza los syntetizadores y reproductores de Foxdot para que processing interprete de forma visual ya sea con imagenes u otro elemento visual de processing como figuras geometricas.
-
-
 ## Inatalación
-
-> Descargar e instalar Processing https://processing.org/download/
 
 > Descargar e instalar FoxDot https://noisk8.github.io/FoxDot.io/instal.html
 
 
-Para obtener la comunicación entre FoxDot y Processing  debemos alterar el archivo  ServerManager.py  para indicarle a foxdot cual va ser el servidor y el puerto, ubicado en /FoxDot/lib/ 
+Para obtener la comunicación entre FoxDot y Processing  debemos alterar el archivo  ServerManager.py  para indicarle a foxdot en que servidor y puerto va lanzar los mensajes osc.
+
+El archivo ServerManager.py está ubicado en la ruta /FoxDot/lib/ 
 
 En Linux ServerManager.py está ubicado en /usr/local/lib/python2.7/dist-packages/FoxDot/lib 
 
 
-'podemos mantener el archivo tal y como está y solo debemos de anexar un par de lineas que le indicaran a foxdot cómo debe de salir por osc.' y hacer los sigiente.
-
+'podemos mantener el archivo tal y como está y solo debemos de anexar un par de lineas.
 
 Abajo de la linea 195 se agreran estas linea
 
@@ -40,19 +38,27 @@ y el otro cambio es poner la siguiente linea abajo de la 280 del archivo
 
 Ahora Foxdot enviará mensaje osc a este en el servidor "127.0.0.1", y por el puerto 12345
 
-El otro componente que necesitamos para hacer la comunicación es un codigo de processing que cree un cliente osc que se va conectar al servidor previamente creado, así procesing podrá interprete visualmente los mensajes osc que lanzan los sonidos de FoxDot.
+#### Aplicación WIP
 
+## Descagar FDP
+
+Linux-32 bits
+
+Linux-64 bits
+
+Linux-arm64 
+
+linux-armv6hf
+
+Windows-32 bits 
+
+Windows-64 bits
+
+Codigo fuente
 
 ## Cómo empezar ?
 
-Después de tener Foxdot y Processing instalado, debes de arrancar foxdot y  posteriormente FDP.
-
-
-
-### Nota 
-En este ejemplo cada synthe llama una imagen, pero esto puede ser modificado si es el gusto.
-
-## Cómo cambiar el llamado visual ?
+Primero debes iniciar foxdot y posteriormente FDP.
 
 
 ### Ejemplos 
