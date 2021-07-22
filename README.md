@@ -38,23 +38,7 @@ y el otro cambio es poner la siguiente linea abajo de la 280 del archivo
 
 Ahora Foxdot enviará mensaje osc a este en el servidor "127.0.0.1", y por el puerto 12345
 
-#### Aplicación WIP
 
-## Descagar FDP
-
-Linux-32 bits
-
-Linux-64 bits
-
-Linux-arm64 
-
-linux-armv6hf
-
-Windows-32 bits 
-
-Windows-64 bits
-
-Codigo fuente
 
 ## Cómo empezar ?
 
